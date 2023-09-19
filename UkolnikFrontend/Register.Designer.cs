@@ -34,6 +34,9 @@
             PasswordBox = new TextBox();
             Label1 = new Label();
             LoginRedirect = new LinkLabel();
+            label2 = new Label();
+            label3 = new Label();
+            label4 = new Label();
             SuspendLayout();
             // 
             // RegisterButton
@@ -94,12 +97,42 @@
             LoginRedirect.Text = "Don't have an account?";
             LoginRedirect.LinkClicked += LoginRedirect_LinkClicked;
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(61, 81);
+            label2.Name = "label2";
+            label2.Size = new Size(60, 15);
+            label2.TabIndex = 6;
+            label2.Text = "Username";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(61, 156);
+            label3.Name = "label3";
+            label3.Size = new Size(36, 15);
+            label3.TabIndex = 7;
+            label3.Text = "Email";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(61, 235);
+            label4.Name = "label4";
+            label4.Size = new Size(57, 15);
+            label4.TabIndex = 8;
+            label4.Text = "Password";
+            // 
             // Register
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlLight;
             ClientSize = new Size(377, 427);
+            Controls.Add(label4);
+            Controls.Add(label3);
+            Controls.Add(label2);
             Controls.Add(LoginRedirect);
             Controls.Add(Label1);
             Controls.Add(PasswordBox);
@@ -120,5 +153,8 @@
         private TextBox PasswordBox;
         private Label Label1;
         private LinkLabel LoginRedirect;
+        private Label label2;
+        private Label label3;
+        private Label label4;
     }
 }

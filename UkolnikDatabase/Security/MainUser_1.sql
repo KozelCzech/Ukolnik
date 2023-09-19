@@ -1,3 +1,0 @@
-﻿CREATE LOGIN [MainUser]
-    WITH PASSWORD = N'kgvpxcnqwkybwvCi2k,|U.nhmsFT7_&#$!~<UKy2tjxoroxG', SID = 0x46EE71DCFED2F342A7E203248EC1B077, DEFAULT_LANGUAGE = [us_english], CHECK_POLICY = OFF;
-

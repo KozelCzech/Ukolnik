@@ -33,6 +33,8 @@
             PasswordBox = new TextBox();
             Laber1 = new Label();
             linkLabel1 = new LinkLabel();
+            label1 = new Label();
+            label2 = new Label();
             SuspendLayout();
             // 
             // LoginButton
@@ -86,12 +88,32 @@
             linkLabel1.TextAlign = ContentAlignment.MiddleCenter;
             linkLabel1.LinkClicked += linkLabel1_LinkClicked;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(61, 156);
+            label1.Name = "label1";
+            label1.Size = new Size(63, 15);
+            label1.TabIndex = 5;
+            label1.Text = "Username:";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(61, 235);
+            label2.Name = "label2";
+            label2.Size = new Size(57, 15);
+            label2.TabIndex = 6;
+            label2.Text = "Password";
+            // 
             // Login
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlLight;
             ClientSize = new Size(377, 427);
+            Controls.Add(label2);
+            Controls.Add(label1);
             Controls.Add(linkLabel1);
             Controls.Add(Laber1);
             Controls.Add(PasswordBox);
@@ -110,5 +132,7 @@
         private TextBox PasswordBox;
         private Label Laber1;
         private LinkLabel linkLabel1;
+        private Label label1;
+        private Label label2;
     }
 }

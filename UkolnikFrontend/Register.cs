@@ -25,7 +25,7 @@ namespace UkolnikFrontend
             if (registrationSuccess)
             {
                 //MessageBox.Show("Registration successful");
-                
+
             }
             else
             {
